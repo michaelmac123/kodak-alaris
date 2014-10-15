@@ -30,3 +30,10 @@ $red-orange:#B73E18;
   &:hover {
     background: lighten($dark-blue, 8);
     color:      $white; } }
+
+.btn.btn-med-blue{
+  background:   $med-blue;
+  border-color: lighten($med-blue, 25);
+  &:hover {
+    background: lighten($med-blue, 8);
+    color:      $white; } }
