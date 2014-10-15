@@ -133,12 +133,12 @@ h6 {
       border:none;
     }
     & > a {
-      color:          darken($bone, 10);
-      text-shadow:    1px 1px 0 darken($med-blue, 10);
+      color:          darken($bone, 5);
+      text-shadow:    1px 1px 0 darken($med-blue, 20);
       &:hover {
         background-color: $med-blue !important;
-        color:            darken($bone, 20)!important;
-        text-shadow:      1px 1px 0 darken($med-blue, 10); } } }
+        color:            darken($bone, 10)!important;
+        text-shadow:      1px 1px 0 darken($med-blue, 20); } } }
 
 
   .navbar-nav > .active > a,
