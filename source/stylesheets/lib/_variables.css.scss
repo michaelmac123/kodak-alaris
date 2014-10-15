@@ -1,0 +1,32 @@
+$white:     #FFFFFF;
+$med-blue:  #283d4e;
+$dark-blue: #1a242d;
+$yellow:    #d6ec30;
+$bone:      #ecf0f1;
+$gray:      #95a3a6;
+$teal:      #88c9b3;
+$red-orange:#B73E18;
+
+.white {
+  color:    $white; }
+.med-blue {
+  color:    $med-blue; }
+.dark-blue {
+  color:    $dark-blue; }
+.yellow {
+  color:    $yellow; }
+.bone {
+  color:    $bone; }
+.gray {
+  color:    $gray; }
+.teal {
+  color:    $teal; }
+.red-orange {
+  color:    $red-orange; }
+
+.btn.btn-dark-blue{
+  background:   $dark-blue;
+  border-color: lighten($dark-blue, 25);
+  &:hover {
+    background: lighten($dark-blue, 8);
+    color:      $white; } }

@@ -1,0 +1,222 @@
+@import "common";
+
+body,
+html {
+  height: 100%;
+  width:  100%; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font:{
+    family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    weight: 700; } }
+
+.lead {
+  font:{
+    size:   18px;
+    weight: 400; } }
+
+.lead-points {
+  color:  rgba($med-blue, .75);
+  font:{
+    size:   12px;
+    weight: lighter; }
+  .title {
+    color:  darken($gray, 20);
+    display:block;
+    font:{
+      size:   14px;
+      weight: bold; } } }
+
+.intro-header {
+  background: url("/images/header-image2.jpg") no-repeat center center;
+  background-size: cover;
+  border-bottom: 1px solid #e7e7e7;
+  color:      $bone;
+  padding:{
+    top:      50px; /* If you're making other pages, make sure there is 50px of padding to make sure the bar doesn't overlap content! */
+    bottom:   50px;}
+  text-align: center; }
+
+.intro-message {
+  margin:{
+    bottom:   30%;
+    top:      18%; } }
+
+.intro-content {
+  @include border-radius(1px);
+  @include box-shadow(0 0 3px $dark-blue);
+  background-color: rgba(lighten($gray, 10), .9);
+  padding:{
+    bottom:   1%;
+    top:      1%; }
+  margin-top:        -10%;
+  position:   relative;
+  & > h1 {
+    font-size:5em;
+    margin:   0;
+    text-shadow: 1px 1px 1px rgba($dark-blue,0.6); }
+  & > h3 {
+    text-shadow: 1px 1px 1px rgba($dark-blue,0.6); } }
+
+
+.intro-divider {
+  width:      400px;
+  border:{
+    top:      1px solid $bone;
+    bottom:   1px solid rgba(0,0,0,0.2); } }
+
+.pricing {
+  font-size:  2em;
+}
+
+@media(max-width: 767px) {
+  .intro-message {
+    padding-bottom: 15%;
+    & > h1 {
+    font-size:      3em; } }
+
+  ul.intro-social-buttons {
+      & > li {
+      display:      block;
+      margin-bottom: 20px;
+      padding:      0;
+      &:last-child {
+        margin-bottom: 0; } } }
+
+  .intro-divider {
+    width:          100%; }
+}
+
+.network-name {
+  font:{
+    size:     14px;
+    weight:   400; }
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.content-section-a {
+  background-color: $bone;
+  padding:      30px 0; }
+
+.content-section-b {
+  border:{
+    top:        1px solid #e7e7e7;
+    bottom:     1px solid #e7e7e7;}
+  padding:      30px 0; }
+
+.section-heading {
+  margin-bottom:30px; }
+
+.section-heading-spacer {
+  @include float;
+  border-top:   3px solid darken($bone, 10);
+  margin:       10px 0 5px 0;
+  width:        200px; }
+.section-body-spacer {
+  border-top:   3px solid darken($bone, 10);
+  margin:       10px 0 5px 0;
+}
+//Navbar
+.navbar-default {
+  background-color: rgba(lighten($med-blue, 10), .95);
+  border-color:     darken($med-blue, 2);
+  .navbar-nav > li {
+    border:{
+      right:        2px ridge lighten($med-blue, 25); }
+    &:last-of-type {
+      border:none;
+    }
+    & > a {
+      color:          darken($med-blue, 10);
+      text-shadow:    1px 1px 0 lighten($med-blue, 25);
+      &:hover {
+        background-color: $med-blue !important;
+        color:            lighten($med-blue, 60)!important;
+        text-shadow:      1px 1px 0 darken($med-blue, 10); } } }
+
+
+  .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    background-color: lighten($med-blue, 5);
+    color:            $white;  }
+  .navbar-brand {
+    color:          $yellow;
+    font:{
+      size:         1.7em;
+      weight:       normal; }
+    &:hover {
+      color:        lighten($yellow, 15); } } }
+
+.banner {
+  color:            $bone;
+  background:       url("/images/banner-bg.jpg") no-repeat center center;
+  background-size:  cover;
+  padding:          100px 0;
+
+  h2 {
+    font-size:      3em;
+    margin:         0;
+    text-shadow:    2px 2px 3px rgba(0,0,0,0.6); }
+
+  ul {
+    margin-bottom: 0; } }
+
+.banner-social-buttons {
+  @include float(right);
+  margin-top: 0; }
+
+.video-block {
+  @include border-radius(3px);
+  @include box-shadow(0 0 15px darken($gray, 5) inset);
+  background-color: $gray;
+  border:           15px  solid darken($bone, 5);
+  padding:          10px;
+  height:           100%;
+  width:            100%;
+}
+
+@media(max-width:1199px) {
+  ul.banner-social-buttons {
+    @include float;
+    margin-top:   15px; }
+}
+
+@media(max-width:767px) {
+  .banner h2 {
+    font-size:    3em;
+    margin:       0;
+    text-shadow:  2px 2px 3px rgba(0,0,0,0.6); }
+
+  ul.banner-social-buttons > li {
+    display:      block;
+    margin-bottom:20px;
+    padding:      0;
+    &:last-child {
+      margin-bottom: 0; } }
+}
+
+footer {
+  background-color: $bone;
+  padding:          50px 0; }
+
+.footer-links ul {
+  li > a {
+    color:          #777777;
+  }
+  li:after {
+    content:        " | ";
+    font-size:      1.2em;
+    padding:{
+      left:         .9em; } }
+  li:last-of-type:after {
+    content:        ""; } }
+
+p.copyright {
+  margin: 15px 0 0; }
