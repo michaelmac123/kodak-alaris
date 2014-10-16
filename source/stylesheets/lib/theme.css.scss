@@ -180,21 +180,21 @@ p {
 
 .testimonial {
   color:      rgba($med-blue, .8);
-}
+  margin-top: 5%; }
 
 .testimonial-name {
   color:      $red-orange;
   text-align: right;
   margin:{
-    right:    20%;}
-}
+    right:    20%;} }
+
 .banner-bar {
   @include box-shadow(0 0 3px $dark-blue);
   background-color: rgba(lighten($gray, 20), .9);
   padding:{
     bottom:   .5%;
-    top:      1%; }
-}
+    top:      1%; } }
+
 .banner {
   color:            $bone;
   background:       url("/images/banner-bg.jpg") no-repeat center center;
