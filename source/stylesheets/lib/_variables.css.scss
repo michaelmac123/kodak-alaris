@@ -1,7 +1,7 @@
 $white:     #FFFFFF;
 $med-blue:  #283d4e;
 $dark-blue: #1a242d;
-$yellow:    #d6ec30;
+$yellow:    #e1f220;
 $bone:      #ecf0f1;
 $gray:      #95a3a6;
 $teal:      #88c9b3;
@@ -27,6 +27,7 @@ $red-orange:#B73E18;
 .btn.btn-dark-blue{
   background:   $dark-blue;
   border-color: lighten($dark-blue, 20);
+  color:        $white;
   &:hover {
     background: lighten($dark-blue, 8);
     color:      $white; } }
@@ -34,6 +35,7 @@ $red-orange:#B73E18;
 .btn.btn-med-blue{
   background:   $med-blue;
   border-color: lighten($med-blue, 20);
+  color:        $white;
   &:hover {
     background: lighten($med-blue, 8);
     color:      $white; } }

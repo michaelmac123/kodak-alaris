@@ -32,42 +32,59 @@ p {
 .bold {
   font-weight:  bold; }
 
-.lead {
-  font:{
-    size:   18px;
-    weight: 400; } }
+//Navbar
+.navbar-default {
+  background-color: rgba(lighten($med-blue, 10), .95);
+  border-color:     darken($med-blue, 2);
+  .navbar-nav > li {
+    border:{
+      right:        2px ridge lighten($med-blue, 25); }
+    &:last-of-type {
+      border:none;
+    }
+    & > a {
+      color:          darken($bone, 5);
+      text-shadow:    1px 1px 0 darken($med-blue, 20);
+      &:hover {
+        background-color: $med-blue !important;
+        color:            darken($bone, 10)!important;
+        text-shadow:      1px 1px 0 darken($med-blue, 20); } } }
 
-.lead-points {
-  color:  rgba($med-blue, .75);
-  font:{
-    size:   12px;
-    weight: lighter; }
-  .title {
-    color:  darken($gray, 20);
-    display:block;
+
+  .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    background-color: lighten($med-blue, 5);
+    color:            $white;  }
+  .navbar-brand {
+    color:          $yellow;
     font:{
-      size:   14px;
-      weight: bold; } } }
+      size:         1.7em;
+      weight:       normal; }
+    &:hover {
+      color:        lighten($yellow, 15); } } }
 
+// Header section
 .intro-header {
-  background: url("/images/header-image2.jpg") no-repeat center center;
+  background: url("/images/header-image.jpg") no-repeat center center;
   background-size: cover;
   border-bottom: 1px solid #e7e7e7;
-  color:      $bone;
   padding:{
     top:      50px; /* If you're making other pages, make sure there is 50px of padding to make sure the bar doesn't overlap content! */
     bottom:   50px;}
-  text-align: center; }
+  text-align: center;
+  p {
+    color:    $med-blue; } }
 
 .intro-message {
   margin:{
-    bottom:   30%;
+    bottom:   18%;
     top:      18%; } }
 
 .intro-content {
   @include border-radius(1px);
   @include box-shadow(0 0 3px $dark-blue);
-  background-color: rgba(lighten($gray, 10), .9);
+  background-color: rgba(lighten($gray, 20), .9);
   padding:{
     bottom:   1%;
     top:      1%; }
@@ -78,6 +95,7 @@ p {
     margin:   0;
     text-shadow: 1px 1px 0px rgba($dark-blue,0.3); }
   & > h2 {
+    color:       $bone;
     text-shadow: 1px 1px 0px rgba($dark-blue,0.3); } }
 
 
@@ -134,41 +152,27 @@ p {
   border-top:   3px solid darken($bone, 10);
   margin:       10px 0 5px 0;
   width:        200px; }
+
 .section-body-spacer {
   border-top:   3px solid darken($bone, 10);
-  margin:       10px 0 5px 0;
-}
-//Navbar
-.navbar-default {
-  background-color: rgba(lighten($med-blue, 10), .95);
-  border-color:     darken($med-blue, 2);
-  .navbar-nav > li {
-    border:{
-      right:        2px ridge lighten($med-blue, 25); }
-    &:last-of-type {
-      border:none;
-    }
-    & > a {
-      color:          darken($bone, 5);
-      text-shadow:    1px 1px 0 darken($med-blue, 20);
-      &:hover {
-        background-color: $med-blue !important;
-        color:            darken($bone, 10)!important;
-        text-shadow:      1px 1px 0 darken($med-blue, 20); } } }
+  margin:       10px 0 5px 0; }
 
+.lead {
+  font:{
+    size:   18px;
+    weight: 400; } }
 
-  .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-    background-color: lighten($med-blue, 5);
-    color:            $white;  }
-  .navbar-brand {
-    color:          $yellow;
+.lead-points {
+  color:  rgba($med-blue, .75);
+  font:{
+    size:   12px;
+    weight: lighter; }
+  .title {
+    color:  darken($gray, 20);
+    display:block;
     font:{
-      size:         1.7em;
-      weight:       normal; }
-    &:hover {
-      color:        lighten($yellow, 15); } } }
+      size:   14px;
+      weight: bold; } } }
 
 .banner {
   color:            $bone;
