@@ -95,14 +95,14 @@ p {
     margin:   0;
     text-shadow: 1px 1px 0px rgba($dark-blue,0.3); }
   & > h2 {
-    color:       $bone;
+    color:       lighten($bone, 5);
     text-shadow: 1px 1px 0px rgba($dark-blue,0.3); } }
 
 
 .intro-divider {
   width:      400px;
   border:{
-    top:      1px solid $bone;
+    top:      1px solid rgba(lighten($bone, 5), .8);
     bottom:   1px solid rgba($dark-blue,0.3); } }
 
 .pricing {
