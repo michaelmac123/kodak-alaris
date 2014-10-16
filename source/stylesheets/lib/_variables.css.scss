@@ -26,14 +26,27 @@ $red-orange:#B73E18;
 
 .btn.btn-dark-blue{
   background:   $dark-blue;
-  border-color: lighten($dark-blue, 25);
+  border-color: lighten($dark-blue, 20);
   &:hover {
     background: lighten($dark-blue, 8);
     color:      $white; } }
 
 .btn.btn-med-blue{
   background:   $med-blue;
-  border-color: lighten($med-blue, 25);
+  border-color: lighten($med-blue, 20);
   &:hover {
     background: lighten($med-blue, 8);
     color:      $white; } }
+
+//Fonts
+$sansFontFamily:    "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:   "Josefin Slab", "Times New Roman", Times, serif;
+$maven-pro:         "Maven Pro", $serifFontFamily;
+
+$upper-class:   $serifFontFamily;
+$dress-class:   $maven-pro;
+$work-class:    $sansFontFamily;
+
+.upper-class {  font-family:  $upper-class; }
+.dress-class {  font-family:  $dress-class; }
+.work-class  {  font-family:  $work-class;  }
