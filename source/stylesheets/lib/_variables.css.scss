@@ -49,6 +49,6 @@ $upper-class:   $serifFontFamily;
 $dress-class:   $maven-pro;
 $work-class:    $sansFontFamily;
 
-.upper-class {  font-family:  $upper-class; }
+.upper-class {  font-family:  $upper-class; line-height:110%; } // weird line-height
 .dress-class {  font-family:  $dress-class; }
 .work-class  {  font-family:  $work-class;  }

@@ -32,6 +32,10 @@ p {
 .bold {
   font-weight:  bold; }
 
+.btn {
+  @include border-radius(2px);
+}
+
 //Navbar
 .navbar-default {
   background-color: rgba(lighten($med-blue, 10), .95);
@@ -174,6 +178,23 @@ p {
       size:   14px;
       weight: bold; } } }
 
+.testimonial {
+  color:      rgba($med-blue, .8);
+}
+
+.testimonial-name {
+  color:      $red-orange;
+  text-align: right;
+  margin:{
+    right:    20%;}
+}
+.banner-bar {
+  @include box-shadow(0 0 3px $dark-blue);
+  background-color: rgba(lighten($gray, 20), .9);
+  padding:{
+    bottom:   .5%;
+    top:      1%; }
+}
 .banner {
   color:            $bone;
   background:       url("/images/banner-bg.jpg") no-repeat center center;
@@ -181,15 +202,18 @@ p {
   padding:          100px 0;
 
   h2 {
+    color:          $med-blue;
     font-size:      3em;
-    margin:         0;
-    text-shadow:    2px 2px 3px rgba(0,0,0,0.6); }
-
+    margin:{
+      top:          5px;
+      right:        0;
+      bottom:       0;
+      left:         0; } }
   ul {
     margin-bottom: 0; } }
 
 .banner-social-buttons {
-  @include float(right);
+  @include float;
   margin-top: 0; }
 
 .video-block {
