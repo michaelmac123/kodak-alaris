@@ -89,28 +89,34 @@ p {
   @include border-radius(1px);
   @include box-shadow(0 0 3px $dark-blue);
   background-color: rgba(lighten($gray, 20), .9);
-  padding:{
-    bottom:   1%;
-    top:      1%; }
-  margin-top:        -10%;
-  position:   relative;
+  padding:        1%;
+  margin-top:     -10%;
+  position:       relative;
   & > h1 {
-    font-size:5em;
-    margin:   0;
-    text-shadow: 1px 1px 0px rgba($dark-blue,0.3); }
+    font:{
+      family:     $work-class;
+      size:       5em; }
+    margin:       0;
+    padding:      0;
+    text-shadow:  1px 1px 0px rgba($dark-blue,0.3); }
   & > h2 {
-    color:       lighten($bone, 5);
+    font:{
+      family:     $work-class; }
+    color:       $med-blue;
     text-shadow: 1px 1px 0px rgba($dark-blue,0.3); } }
 
 
 .intro-divider {
-  width:      400px;
   border:{
     top:      1px solid rgba(lighten($bone, 5), .8);
     bottom:   1px solid rgba($dark-blue,0.3); } }
 
 .pricing {
-  font-size:  2em;
+  color:      $red-orange;
+  font:{
+    family:   $upper-class;
+    size:     2em; }
+  text-align: left;
 }
 
 @media(max-width: 767px) {
@@ -183,10 +189,13 @@ p {
   margin-top: 5%; }
 
 .testimonial-name {
-  color:      $red-orange;
-  text-align: right;
+  font:{
+    family:   $work-class;
+    weight:   bold; }
+  text-align: left;
   margin:{
-    right:    20%;} }
+    left:     4%;
+    bottom:   1%;} }
 
 .banner-bar {
   @include box-shadow(0 0 3px $dark-blue);

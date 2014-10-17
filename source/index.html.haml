@@ -53,7 +53,7 @@ body_class: index
 .content-section-b
   .container
     .row
-      .col-lg-6.col-sm-push-6.col-sm-6
+      .col-lg-5.col-sm-push-7.col-sm-6
         %h2.section-heading.margin-bottomgap0.med-blue
           Alaris compliments your team
         %hr.section-heading-spacer/
@@ -61,23 +61,22 @@ body_class: index
         %p.lead
           Donec gravida posuere arcu. Nulla facilisi. Phasellus imperdiet. Vestibulum at metus. Integer euismod. Nullam placerat rhoncus sapien. Ut euismod. Praesent libero. Morbi pellentesque libero sit amet ante. Maecenas tellus. Maecenas erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
-
-      .col-lg-5.col-sm-pull-6.col-sm-6
-        %img.img-responsive{ alt: "", src: "images/star_partnerships.jpg"}/
-    .row
-      .col-lg-6.pull-right
-        %ul.list-inline
-          %li.image-block.padding-sidegap10= image_tag "images/partner-ico/dropbox-logo.png", alt: "dropbox"
-          %li.image-block= image_tag "images/partner-ico/quickbooks-logo.png", alt: "dropbox"
-          %li.image-block.padding-sidegap10= image_tag "images/partner-ico/freshbooks-logo.png", alt: "dropbox"
-          %li.image-block= image_tag "images/partner-ico/salesforce-logo.png", alt: "dropbox"
+      .col-lg-7.col-sm-pull-5.col-sm-6
+        %img.img-responsive{ alt: "Alaris Sun", src: "images/alaris-sun.png"}/
+    / .row
+    /   .col-lg-6.pull-right
+    /     %ul.list-inline
+    /       %li.image-block.padding-sidegap10= image_tag "images/partner-ico/dropbox-logo.png", alt: "dropbox"
+    /       %li.image-block= image_tag "images/partner-ico/quickbooks-logo.png", alt: "dropbox"
+    /       %li.image-block.padding-sidegap10= image_tag "images/partner-ico/freshbooks-logo.png", alt: "dropbox"
+    /       %li.image-block= image_tag "images/partner-ico/salesforce-logo.png", alt: "dropbox"
 
 .content-section-a
   .container
     .row
       .col-lg-12.col-sm-6
         %h2.section-heading.margin-bottomgap0.med-blue
-          Feature Call Out
+          Radically Simple
         %hr.section-heading-spacer/
         .clearfix
       .col-lg-7.col-sm-6
@@ -85,11 +84,14 @@ body_class: index
           %img.img-responsive{alt: "", src: "images/phones.png"}/
 
       .col-lg-5.col-sm-5.testimonial
+        %h3.testimonial-callout
+          Fantastic solution to my small business
         .col-lg-1.padding-topgap5
           %i.fa.fa-quote-left.fa-fw.fa-2x
         .col-lg-11.col-sm-5
-          %p.lead
+          %p.lead><
             Donec gravida posuere arcu. Nulla facilisi. Phasellus imperdiet. Vestibulum at metus. Integer euismod. Nullam placerat rhoncus sapien. Ut euismod. Praesent libero. Morbi pellentesque libero sit amet ante. Maecenas tellus. Maecenas erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            %i.fa.fa-quote-left.fa-fw.fa-lg
           %p.testimonial-name ~John S.
 
 
