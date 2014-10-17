@@ -108,8 +108,8 @@ p {
 
 .intro-divider {
   border:{
-    top:      1px solid rgba(lighten($bone, 5), .8);
-    bottom:   1px solid rgba($dark-blue,0.3); } }
+    top:      3px solid lighten($gray, 10);
+    bottom:   0px solid rgba(lighten($bone, 5), .8);   } }
 
 .pricing {
   color:      $red-orange;
@@ -146,13 +146,21 @@ p {
 
 .content-section-a {
   background-color: $bone;
-  padding:      30px 0; }
+  padding:      20px 0; }
 
 .content-section-b {
   border:{
     top:        1px solid #e7e7e7;
     bottom:     1px solid #e7e7e7;}
-  padding:      30px 0; }
+  padding:      20px 0; }
+
+.section-base-heading {
+  color:       $red-orange;
+  font:{
+    family:    $work-class;
+    size:      2em;
+    style:     italic; }
+  margin:      15px 0 0 0; }
 
 .section-heading {
   margin-bottom:30px; }
@@ -230,9 +238,9 @@ p {
   @include box-shadow(0 0 15px darken($gray, 5) inset);
   background-color: $gray;
   border:           15px  solid darken($bone, 5);
-  padding:          10px;
+  padding:          10px 10px 5px 10px;
   height:           100%;
-  width:            100%;
+  width:            93.5%;
 }
 
 @media(max-width:1199px) {
