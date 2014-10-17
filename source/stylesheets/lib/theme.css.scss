@@ -194,16 +194,27 @@ p {
 
 .testimonial {
   color:      rgba($med-blue, .8);
-  margin-top: 5%; }
+  margin-top: 2%; }
 
-.testimonial-name {
+.testimonial-callout {
   font:{
     family:   $work-class;
     weight:   bold; }
   text-align: left;
   margin:{
     left:     4%;
-    bottom:   1%;} }
+    bottom:   1%; } }
+
+.testimonial-name {
+  font:{
+    family:   $work-class;
+    size:     1.2em;
+    weight:   bold; }
+  text-align: right;
+  margin:{
+    right:     20%;
+    bottom:   1%; }
+}
 
 .banner-bar {
   @include box-shadow(0 0 3px $dark-blue);
