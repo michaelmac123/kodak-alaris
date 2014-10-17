@@ -92,14 +92,15 @@ p {
   padding:        1%;
   margin-top:     -10%;
   position:       relative;
-  & > h1 {
+  h1 {
     font:{
       family:     $work-class;
       size:       5em; }
     margin:       0;
     padding:      0;
     text-shadow:  1px 1px 0px rgba($dark-blue,0.3); }
-  & > h2 {
+  h2 {
+    border-bottom:3px solid lighten($gray, 10);
     font:{
       family:     $work-class; }
     color:       $med-blue;
@@ -108,15 +109,12 @@ p {
 
 .intro-divider {
   border:{
-    top:      3px solid lighten($gray, 10);
-    bottom:   0px solid rgba(lighten($bone, 5), .8);   } }
+    top:      0px solid rgba(lighten($gray, 30), .8);
+    bottom:   1px solid rgba(lighten($gray, 10), .8);   } }
 
 .pricing {
-  color:      $red-orange;
   font:{
-    family:   $upper-class;
     size:     2em; }
-  text-align: left;
 }
 
 @media(max-width: 767px) {
@@ -146,7 +144,9 @@ p {
 
 .content-section-a {
   background-color: $bone;
-  padding:      20px 0; }
+  padding:      20px 0;
+
+  }
 
 .content-section-b {
   border:{
@@ -168,7 +168,7 @@ p {
 .section-heading-spacer {
   @include float;
   border-top:   3px solid darken($bone, 10);
-  margin:       10px 0 5px 0;
+  margin:       0px 0 10px 0;
   width:        200px; }
 
 .section-body-spacer {
@@ -176,14 +176,17 @@ p {
   margin:       10px 0 5px 0; }
 
 .lead {
-  font:{
-    size:   18px;
-    weight: 400; } }
+  h4 {
+    font-size:  1em; }
+  p {
+    color:  rgba($med-blue, .75);
+    font:{
+      size:   14px; } } }
 
 .lead-points {
   color:  rgba($med-blue, .75);
   font:{
-    size:   12px;
+    size:   14px;
     weight: lighter; }
   .title {
     color:  darken($gray, 20);
@@ -191,6 +194,8 @@ p {
     font:{
       size:   14px;
       weight: bold; } } }
+.border-left {
+  border-left:  1px solid darken($bone, 10); }
 
 .testimonial {
   color:      rgba($med-blue, .8);
