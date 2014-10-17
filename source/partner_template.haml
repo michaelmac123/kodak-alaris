@@ -1,0 +1,55 @@
+---
+title: Kodak Alaris
+body_class: index
+---
+= partial "layouts/navigation"
+/ Page Content
+.content-section-a.first-col
+  .container
+    .row
+      .col-lg-6.col-sm-6
+        %h2.section-heading.margin-bottomgap0.med-blue
+          Connect with our partnered solutions
+        %hr.section-heading-spacer
+        .clearfix
+
+    .row.margin-gap20
+      .col-lg-3.col-sm-6.partners
+        %a.partner-box{href: "#"}= image_tag 'partner-ico/dropbox-logo.png'
+      .col-lg-3.partners
+        %a.partner-box{href: "#"}= image_tag 'partner-ico/freshbooks-logo.png'
+      .col-lg-3.partners
+        %a.partner-box{href: "#"}= image_tag 'partner-ico/quickbooks-logo.png'
+      .col-lg-3.partners
+        %a.partner-box{href: "#"}= image_tag 'partner-ico/salesforce-logo.png'
+    .row
+      %hr.section-body-spacer
+      .col-lg-12.col-sm-6.testimonial.margin-topgap0
+        %h3.testimonial-callout
+          Fantastic solution for my SMB
+        .col-lg-1.padding-topgap5
+        .col-lg-11.col-sm-5
+          %p.lead><
+            %i.fa.fa-quote-left.fa-fw.fa-lg
+            Donec gravida posuere arcu. Nulla facilisi. Phasellus imperdiet. Vestibulum at metus. Integer euismod. Nullam placerat rhoncus sapien. Ut euismod. Praesent libero. Morbi pellentesque libero sit amet ante. Maecenas tellus. Maecenas erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            %i.fa.fa-quote-left.fa-fw.fa-lg
+.banner
+  .banner-bar
+    .container
+      .row
+        .col-lg-6
+          %h2.text-right Connect with Star
+        .col-lg-6
+          %ul.list-inline.banner-social-buttons
+            %li
+              %a.btn.btn-primary.btn-lg{ href: "https://twitter.com/SBootstrap"}
+                %i.fa.fa-twitter.fa-fw
+                %span.network-name Twitter
+            %li
+              %a.btn.btn-primary.btn-lg{ href: "http://facebok.com"}
+                %i.fa.fa-facebook.fa-fw
+                %span.network-name Facebook
+            %li
+              %a.btn.btn-primary.btn-lg{ href: "#"}
+                %i.fa.fa-linkedin.fa-fw
+                %span.network-name Linkedin

@@ -1,15 +1,15 @@
 - page:
-  id: 3
+  id: 1
   name: about star
 
 - page:
-  id: 3
-  name: customer support
-
-- page:
-  id: 3
+  id: 2
   name: FAQs
 
 - page:
   id: 3
   name: contact us
+
+- page:
+  id: 4
+  name: partners

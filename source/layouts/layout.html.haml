@@ -35,8 +35,6 @@
     = stylesheet_link_tag 'application'
 
   %body{class: current_page.data.body_class || 'page'}
-    = partial "layouts/header"
-    = partial "layouts/navigation"
     = yield
     = partial "layouts/footer"
 

@@ -1,0 +1,15 @@
+- partners:
+  id: 1
+  name: quick books
+
+- partners:
+  id: 2
+  name: dropbox
+
+- partners:
+  id: 3
+  name: fresh books
+
+- partners:
+  id: 4
+  name: saleforce
