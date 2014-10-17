@@ -20,11 +20,22 @@ set :relative_links, true
 # end
 data.pages.each do |page|
   if (page.name).parameterize == "partners"
-    proxy "/#{(page.name).parameterize}.html", "/partner_template.html", :locals => { :name => page.name }, :ignore => true
+    proxy "/#{(page.name).parameterize}.html", "/partner_template.html",
+    :locals => { :name => page.name },
+    :ignore => true
   else
-    proxy "/#{(page.name).parameterize}.html", "/page_template.html", :locals => { :name => page.name }, :ignore => true
+    proxy "/#{(page.name).parameterize}.html", "/page_template.html",
+    :locals => { :name => page.name },
+    :ignore => true
   end
 end
+data.partners.each do |partner|
+  proxy "/partners/#{(partner.name).parameterize}.html", "/partner_pages.html",
+  :locals => { :name => partner.name },
+  :ignore => true,
+  :layout => "partners_layout"
+end
+
 
 
 ###

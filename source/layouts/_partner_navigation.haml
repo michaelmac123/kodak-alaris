@@ -1,0 +1,47 @@
+/ Navigation
+%nav#top-nav.navbar.navbar-default{:role => "navigation"}
+  .container
+    .row
+      .col-md-10.col-md-offset-1
+        %ul.nav.navbar-nav.col-lg-12
+          %li.pull-left
+            %a><
+              %i.fa.fa-chevron-down.fa-fw
+              More from intuit
+          %li.pull-right
+            %a
+              %i.fa.fa-phone.fa-fw
+              (877) 683-3280
+              %i.fa.fa-question-circle.fa-fw
+          %li.pull-right
+            %a><
+              %i.fa.fa-comment.fa-fw
+              Chat
+          %li.pull-right
+            %a Cart
+          %li.pull-right
+            %a Security
+
+%nav#main-nav.navbar.navbar-default{:role => "navigation"}
+  .container
+    .row
+      .col-md-2.col-md-offset-1
+        .navbar-header
+          %a.navbar-brand{:href => "/"}= image_tag "partner-site/qb_intuitlogo_horiz_rgb.png"
+        / Collect the nav links, forms, and other content for toggling
+      .col-md-5.col-md-offset-1
+        %ul.nav.navbar-nav.margin-topgap25
+          %li
+            %a PRODUCTS
+          %li
+            %a ADD-ONS
+          %li
+            %a CHECKS
+          %li
+            %a LEARN & SUPPORT
+      .col-md-2
+        %ul.nav.navbar-nav.margin-topgap25
+          %li
+            %button.btn.btn-default{href: "#"} Free Trial
+          %li.margin-leftgap10
+            %button.btn.btn-primary{href: "#"} Sign In

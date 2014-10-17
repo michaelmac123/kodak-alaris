@@ -1,6 +1,6 @@
 - partners:
   id: 1
-  name: quick books
+  name: quickbooks
 
 - partners:
   id: 2
@@ -8,8 +8,8 @@
 
 - partners:
   id: 3
-  name: fresh books
+  name: freshbooks
 
 - partners:
   id: 4
-  name: saleforce
+  name: salesforce
