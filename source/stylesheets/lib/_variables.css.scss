@@ -40,6 +40,15 @@ $red-orange:#B73E18;
     background: lighten($med-blue, 8);
     color:      $white; } }
 
+
+.btn.btn-red-orange{
+  background:   $red-orange;
+  border-color: lighten($red-orange, 20);
+  color:        $white;
+  &:hover {
+    background: lighten($red-orange, 8);
+    color:      $white; } }
+
 //Fonts
 $sansFontFamily:    "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serifFontFamily:   "Josefin Slab", "Times New Roman", Times, serif;

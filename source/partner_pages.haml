@@ -8,7 +8,13 @@ body_class: index
 .container
   .row.margin-bottomgap10
     .col-md-10.col-md-offset-1
-      .hero-container{style: "height:800px"}
+      .hero-container
+        = image_tag "../images/partner-site/partner-ad.png"
+        .row
+          .col-md-5.text-center
+            %button.btn.btn-med-blue{href: "#"} Get Started Today!
+          .col-md-5.text-center.padding-leftgap0
+            %button.btn.btn-med-blue{href: "#"} Join the Partnership!
 
 / Footer
 %footer
@@ -16,5 +22,13 @@ body_class: index
     .row
       .col-lg-12.footer-links
         %ul.list-inline.text-center.text-muted
-          %li &nbsp;
-      .col-lg-12
+          %li
+            %a{href: "#"} Link 1
+          %li
+            %a{href: "#"} Link 2
+          %li
+            %a{href: "#"} Link 3
+          %li
+            %a{href: "#"} Link 4
+          %li
+            %a{href: "#"} Link 5
