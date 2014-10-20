@@ -184,7 +184,10 @@ p {
 
 .testimonial {
   color:      rgba($med-blue, .8);
-  margin-top: 2%; }
+  margin-top: 2%;
+  p {
+    font:{
+      size:   1.3em; } } }
 
 .testimonial-callout {
   font:{
