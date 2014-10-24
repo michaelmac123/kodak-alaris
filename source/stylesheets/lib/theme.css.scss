@@ -112,6 +112,18 @@ p {
     top:      0px solid rgba(lighten($gray, 30), .8);
     bottom:   1px solid rgba(lighten($gray, 10), .8);   } }
 
+.carousel.slide {
+  margin-bottom:  20px;
+  .carousel-indicators {
+    bottom:   -30px; }
+  .carousel-control {
+      background:none;
+      color: $dark-blue;
+    &.left {
+      left: -10.5%; }
+    &.right {
+      right:-10.5%; } } }
+
 .pricing {
   font:{
     size:     2em; }
@@ -293,6 +305,7 @@ p.copyright {
   ul.banner-social-buttons {
     @include float;
     margin-top:   15px; }
+
 }
 
 @media(max-width:767px) {
@@ -328,4 +341,12 @@ p.copyright {
     padding:      0;
     &:last-child {
       margin-bottom: 0; } }
+
+  .carousel.slide .carousel-control {
+      background: none;
+      color:      $dark-blue;
+    &.left {
+      left:       0; }
+    &.right {
+      right:      0; } }
 }
