@@ -8,8 +8,8 @@
 %html{lang: 'en', class: 'no-js'}
   /<![endif]
   %head
-    %title #{data.page.title || "Kodak-Alaris | STAR"}
     %meta(http-equiv="content-type" content="text/html" charset="utf-8")
+    %title #{data.page.title || "Kodak-Alaris | STAR"}
     %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
     %meta(name="description" content="")
     %meta(name="author" content="")
@@ -39,8 +39,9 @@
     = partial "layouts/footer"
 
     -# Javascripts
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8./modernizr.min.js'
     = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
+    = javascript_include_tag '//cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js'
     = javascript_include_tag 'application'
     / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
     / WARNING: Respond.js doesn't work if you view the page via file://
@@ -51,6 +52,25 @@
       var now = new Date();
       var currentYear = now.getFullYear();
       $('#year').text(currentYear);
+      $('.carousel').carousel({
+        interval: 8000,
+        pause: 'hover'
+      })
+
+      (function() {
+        var nav = document.querySelector("nav");
+        if(window.location.hash) {
+          nav.classList.add("slide--up");
+        }
+
+      new Headroom(nav, {
+            tolerance: 0,
+            offset : 650
+        }).init();
+
+      }());
+
+
 
     - if build?
       -# Google Analytics
