@@ -111,20 +111,18 @@ p {
     color:       $med-blue;
     text-shadow: 1px 1px 0px rgba($dark-blue,0.3); } }
 
- .partners-qb {
+.partners-qb {
   .intro-content {
-    top:  -60px;
+    top:  0px;
     h2 {
-      font-size: 36px;
-    } } }
+      font-size: 36px;} } }
 
 .cta {
   font-size:  1.75em; }
 
 .cta-container {
   @include float(left, absolute);
-  margin-top: -36%;
-}
+  margin-top: -33%; }
 
 .intro-divider {
   border:{
