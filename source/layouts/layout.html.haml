@@ -37,7 +37,7 @@
   %body{class: page_classes || 'page'}
     %span#top-link-block.hidden
       %a{ href: "#top", onclick: "$('html,body').animate({scrollTop:0},'slow');return false;" }
-        %i.fa.fa-chevron-up.fa-2x
+        %i.fa.fa-angle-up.fa-2x
     = yield
     = partial "layouts/footer"
 
@@ -52,25 +52,6 @@
       %script{:src => "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"}
       %script{:src => "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"}
     :javascript
-      var now = new Date();
-      var currentYear = now.getFullYear();
-      $('#year').text(currentYear);
-      $('.carousel').carousel({
-        interval: 8000,
-        pause: 'hover'
-      })
-
-      $(function() {
-        var nav = document.querySelector("nav");
-        if(window.location.hash) {
-          nav.classList.add("slide--up");
-        }
-        new Headroom(nav, {
-          tolerance: 0,
-          offset : 550
-        }).init();
-      }());
-
       if ( ($(window).height() + 300) < $(document).height() ) {
           $('#top-link-block').removeClass('hidden').affix({
               offset: { top:100 }
