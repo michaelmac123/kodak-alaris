@@ -33,8 +33,9 @@ data.partners.each do |partner|
   if partner['id'] == 1
     proxy "/partners/#{(partner.name).parameterize}.html", "/partner_pages.html",
     :locals => { :name => partner.name },
-    :ignore => true,
-    :layout => "partners_layout"
+    :ignore => true
+    #,
+    # :layout => "partners_layout"
   else
     proxy "/partners.html", "/partner_template.html",
     :locals => { :name => partner.name },

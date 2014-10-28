@@ -35,6 +35,9 @@
     = stylesheet_link_tag 'application'
 
   %body{class: page_classes || 'page'}
+    %span#top-link-block.hidden
+      %a{ href: "#top", onclick: "$('html,body').animate({scrollTop:0},'slow');return false;" }
+        %i.fa.fa-chevron-up.fa-2x
     = yield
     = partial "layouts/footer"
 
@@ -57,20 +60,22 @@
         pause: 'hover'
       })
 
-      (function() {
+      $(function() {
         var nav = document.querySelector("nav");
         if(window.location.hash) {
           nav.classList.add("slide--up");
         }
-
-      new Headroom(nav, {
-            tolerance: 0,
-            offset : 650
+        new Headroom(nav, {
+          tolerance: 0,
+          offset : 550
         }).init();
-
       }());
 
-
+      if ( ($(window).height() + 300) < $(document).height() ) {
+          $('#top-link-block').removeClass('hidden').affix({
+              offset: { top:100 }
+          });
+      }
 
     - if build?
       -# Google Analytics

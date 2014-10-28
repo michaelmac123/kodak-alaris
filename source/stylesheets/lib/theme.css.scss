@@ -77,20 +77,24 @@ p {
     top:      50px; /* If you're making other pages, make sure there is 50px of padding to make sure the bar doesn't overlap content! */
     bottom:   50px;}
   text-align: center;
+  &.partners-qb {
+    background: url("/images/partner-site/partner-ad.jpg") no-repeat center center;
+    background-size: cover;
+    .white-box {
+      background: rgba(255, 255,255, .9);
+      border-radius: 3px;
+      box-shadow: 0 0 3px 1px rgba(0,0,0, .3);
+    } }
   p {
     color:    $med-blue; } }
 
 .intro-message {
   margin:{
-    bottom:   21%;
-    top:      21%; } }
+    bottom:   43%;
+    top:      10%; } }
 
 .intro-content {
-  @include border-radius(1px);
-  @include box-shadow(0 0 3px $dark-blue);
-  background-color: rgba(lighten($gray, 20), .9);
-  padding:        1%;
-  margin-top:     -10%;
+  top:            40px;
   position:       relative;
   h1 {
     font:{
@@ -211,11 +215,11 @@ p {
 
 .lead {
   h4 {
-    font-size:  1em; }
-  p {
+    font-size:  1em; } }
+p.lead {
     color:  rgba($med-blue, .75);
     font:{
-      size:   14px; } } }
+      size:   1.2em; } }
 
 .lead-points {
   color:  rgba($med-blue, .75);
@@ -233,10 +237,9 @@ p {
 
 .testimonial {
   color:      rgba($med-blue, .8);
-  margin-top: 2%;
   p {
     font:{
-      size:   1.3em; }
+      size:   1.2em; }
     i {
       font-size:1.6em;
     }} }
@@ -294,9 +297,7 @@ p {
   @include box-shadow(0 0 15px darken($gray, 5) inset);
   background-color: $gray;
   border:           15px  solid darken($bone, 5);
-  padding:          10px 10px 5px 10px;
-  height:           100%;
-  width:            96%; }
+  padding:          10px; }
 
 .partners {
   display:          table;
@@ -386,4 +387,32 @@ p.copyright {
       left:       0; }
     &.right {
       right:      0; } }
+}
+
+#top-link-block {
+  a {
+    @include border-radius(3px);
+    @include box-shadow(0 0 0 1px rgba(0,0,0 ,.5));
+    background: rgba(0,0,0, .5);
+    color: rgba($white, .95);
+    display:inline-block;
+    padding: 20% 25%;
+    text-shadow: 1px 1px 1px rgba(0,0,0, .75);
+    &:hover {
+      background: rgba(0,0,0, .75); } }
+  &.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -10%;
+    opacity:  .01;
+    right: 5%; }
+  &.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 10%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    right: 5%;
+    z-index: 1000; }
 }

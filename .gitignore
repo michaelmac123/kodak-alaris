@@ -16,4 +16,6 @@
 .ruby-version
 .ruby-gemset
 
+.DS_Store
+
 /tmp
