@@ -113,7 +113,7 @@ p {
 
 .partners-qb {
   .intro-content {
-    top:  0px;
+    top:  -20px;
     h2 {
       font-size: 36px;} } }
 
@@ -122,7 +122,7 @@ p {
 
 .cta-container {
   @include float(left, absolute);
-  margin-top: -33%; }
+  margin-top: -38%; }
 
 .intro-divider {
   border:{
