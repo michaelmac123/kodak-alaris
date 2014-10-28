@@ -25,28 +25,48 @@ $red-orange:#B73E18;
   color:    $red-orange; }
 
 .btn.btn-dark-blue{
-  background:   $dark-blue;
-  border-color: lighten($dark-blue, 20);
+  $primary:     $dark-blue;
+  background:   $primary;
+  border-color: lighten($primary, 20);
   color:        $white;
   &:hover {
-    background: lighten($dark-blue, 8);
+    background: lighten($primary, 8);
     color:      $white; } }
 
+
 .btn.btn-med-blue{
-  background:   $med-blue;
+  $primary:     $med-blue;
   border-color: lighten($med-blue, 20);
   color:        $white;
   &:hover {
     background: lighten($med-blue, 8);
     color:      $white; } }
 
-
-.btn.btn-red-orange{
-  background:   $red-orange;
-  border-color: lighten($red-orange, 20);
+.btn.btn-lt-blue{
+  $primary:     lighten($med-blue, 10);
+  background:   $primary;
+  border-color: lighten($primary, 20);
   color:        $white;
   &:hover {
-    background: lighten($red-orange, 8);
+    background: lighten($primary, 8);
+    color:      $white; } }
+
+.btn.btn-red-orange{
+  $primary:     $red-orange;
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    background: lighten($primary, 8);
+    color:      $white; } }
+
+.btn.btn-gray{
+  $primary:     $gray;
+  background:   $primary;
+  border-color: lighten($primary, 20);
+  color:        $white;
+  &:hover {
+    background: lighten($primary, 8);
     color:      $white; } }
 
 //Fonts
