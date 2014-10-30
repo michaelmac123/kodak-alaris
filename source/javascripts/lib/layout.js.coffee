@@ -4,7 +4,7 @@ $(document).ready () ->
   currentYear = now.getFullYear()
   $("#year").text currentYear
 
-  # Add headroomt to Nav
+  # Add headroom to Nav
   nav = document.querySelector("nav")
   nav.classList.add "slide--up"  if window.location.hash
   new Headroom(nav,
