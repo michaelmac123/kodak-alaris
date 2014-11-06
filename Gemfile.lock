@@ -30,6 +30,8 @@ GEM
     execjs (1.4.1)
       multi_json (~> 1.0)
     ffi (1.9.6)
+    font-awesome-middleman (4.2.1)
+      middleman-core (>= 3.0.0)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -107,6 +109,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  font-awesome-middleman
   middleman (~> 3.2.0)
   middleman-livereload (~> 3.1.0)
   puma
