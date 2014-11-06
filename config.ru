@@ -7,9 +7,10 @@ require "rack/contrib/try_static"
 # Build the static site when the app boots
 `bundle exec middleman build`
 
-use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  [username, password] == ['kod-tester', 'test-kod']
-end
+# Add http auth to heroku via puma
+# use Rack::Auth::Basic, "Restricted Area" do |username, password|
+#   [username, password] == ['kod-tester', 'test-kod']
+# end
 
 # Enable proper HEAD responses
 use Rack::Head
